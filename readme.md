@@ -10,7 +10,7 @@ You can find the live API here: [challenge.thimoo.ch/api/products](https://chall
 
 This route return the complete list of all products in the database.
 
-```
+```json
 [
     {
         "id": 1,
