@@ -23,4 +23,7 @@ $app->group(['prefix' => 'api'], function () use ($app) {
         // Matches The "/admin/users" URL
         return Product::all();
     });
+
+    $app->get('offers', 'OfferController@index');
+    $app->post('offers', 'OfferController@store');
 });
