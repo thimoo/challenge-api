@@ -59,7 +59,7 @@ This route return the complete list of all products in the database.
 
 Use this route to store a new offer in the database. The format to store a new offer is the next one (products is an array of `product.id` and quantity):
 
-```
+```json
 {
 	"name": "DEVIS site web",
 	"client_name": "Migros",
@@ -75,7 +75,7 @@ Use this route to store a new offer in the database. The format to store a new o
 
 The result is the next one:
 
-```
+```json
 {
     "name": "DEVIS site web",
     "client_name": "Migros",
@@ -144,7 +144,7 @@ The result is the next one:
 
 Return a list of all offers in the database.
 
-```
+```json
 [
     {
         "id": 1,
@@ -161,7 +161,7 @@ Return a list of all offers in the database.
 
 Return a complete offer with all informations (quantity is in the pivot object):
 
-```
+```json
 {
     "id": 1,
     "name": "DEVIS site web",
