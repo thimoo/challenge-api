@@ -1,5 +1,9 @@
 # Thimoo challenge API
 
+## Production
+
+[challenge.thimoo.ch/api/products](https://challenge.thimoo.ch/api/products)
+
 ## Examples
 
 **GET /api/products**
