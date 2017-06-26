@@ -1,5 +1,7 @@
 <?php
 
+use App\Product;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,4 +15,12 @@
 
 $app->get('/', function () use ($app) {
     return $app->version();
+});
+
+$app->group(['prefix' => 'api'], function () use ($app) {
+
+    $app->get('products', function () {
+        // Matches The "/admin/users" URL
+        return Product::all();
+    });
 });
