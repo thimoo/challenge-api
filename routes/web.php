@@ -25,5 +25,6 @@ $app->group(['prefix' => 'api'], function () use ($app) {
     });
 
     $app->get('offers', 'OfferController@index');
+    $app->get('offers/{id}', 'OfferController@show');
     $app->post('offers', 'OfferController@store');
 });

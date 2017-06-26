@@ -19,11 +19,23 @@ class OfferController extends Controller
 
     /**
      * Return all offers.
+     *
      * @return Response
      */
     public function index()
     {
-        return Offer::with('products')->get();
+        return Offer::all();
+    }
+
+    /**
+     * Return a specifig offer.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        return Offer::with('products')->findOrFail($id);
     }
 
     /**
